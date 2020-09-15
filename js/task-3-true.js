@@ -8,10 +8,14 @@ const ACCESS_DENIED = "Доступ запрещен, неверный паро�
 let message;
 
 // Write code under this line
-if ((userPassword = "jqueryismyjam")) {
-  message = `"Добро пожаловать!"`;
+if (userPassword === "jqueryismyjam") {
+  message = ACCESS_IS_ALLOWED;
+} else if (userPassword === null) {
+  message = CANCELED_BY_USER;
+} else {
+  userPassword !== "jqueryismyjam";
+  message = ACCESS_DENIED;
 }
-
 console.log(message);
 
 //если userPassword равно 'jqueryismyjam'
